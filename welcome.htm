@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>EagleDreamTechnologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Deep Katariya">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<div class="content">
+    <img id="edt" src = "images/edt_logo.png" height="76"/><br><br>
+    <!-- // this should be Regex	 -->
+    <input type ="text" pattern="[A-Za-z]" id = "cname" name = "cname" placeholder="Character Name"><br>
+    <br>
+    <!-- // this should be Dalaran -->
+    <input type ="text" pattern="[A-Za-z]"id = "rname" name = "rname" placeholder="Realm Name"><br>
+    <br> 
+    <button class="button" id = "bt"width="143px" height="20px">Search</button>
+    <br>
+</div>
+
+<div class ="container" id="dyn_div">
+	<div class="result_left">
+		<h2 class="label" id="stats">Statistics</h2>
+		<h1 class="attributes" id="lvl">Level</h1>
+		<h1 class="attributes" id="hlth">Health</h1>
+		<h1 class="attributes" id="str">Strength</h1>
+		<h1 class="attributes" id="agi">Agility</h1>
+		<h1 class="attributes" id="int">Intelligence</h1>
+		<h1 class="attributes" id="sta">Stamina</h1>
+		<h1 class="attributes" id="hst">Haste</h1>
+
+		<p class="value" id="val_lvl"></p>
+		<p class="value" id="val_hlth"></p>
+		<p class="value" id="val_str"></p>
+		<p class="value" id="val_agi"></p>
+		<p class="value" id="val_int"></p>
+		<p class="value" id="val_sta"></p>
+		<p class="value" id="val_hst"></p>
+
+		<h2 class="label" id="itemEquipped">Items Equipped<span id="note">&nbsp(Click on the body part below to see items)</span></h2>
+		<a class = "items" id="0"><h1 class="attributes" id="head">Head</h2></a>
+		<a class = "items" id="1"><h1 class="attributes" id="neck">Neck</h1></a>
+		<a class = "items" id="2"><h1 class="attributes" id="shoulder">Shoulder</h1></a>
+		<a class = "items" id="3"><h1 class="attributes" id="back">Back</h1></a>
+		<a class = "items" id="4"><h1 class="attributes" id="shirt">Shirt</h1></a>
+		<a class = "items" id="5"><h1 class="attributes" id="wrist">Wrist</h1></a>
+		<a class = "items" id="6"><h1 class="attributes" id="hands">Hands</h1></a>
+		<a class = "items" id="7"><h1 class="attributes" id="waist">Waist</h1></a>
+		<a class = "items" id="8"><h1 class="attributes" id="legs">Legs</h1></a>
+		<a class = "items" id="9"><h1 class="attributes" id="feet">Feet</h1></a>
+		<a class = "items" id="10"><h1 class="attributes" id="finger1">Finger1</h1></a>
+		<a class = "items" id="11"><h1 class="attributes" id="finger2">Finger2</h1></a>
+		<a class = "items" id="12"><h1 class="attributes" id="trinket1">Trinket1</h1></a>
+		<a class = "items" id="13"><h1 class="attributes" id="trinket2">Trinket2</h1></a>
+		<a class = "items" id="14"><h1 class="attributes" id="mainHand">mainHand</h1></a>
+
+	</div>
+	<div class="result_right">
+		<h2 class="label" id="items">Items</h2>
+		<h1 class="attributes" id="name">Name</h1>
+		<h1 class="attributes" id="bp">Buy Price</h1>
+		<h1 class="attributes" id="sp">Sell Price</h1>
+		<h1 class="attributes" id="req_lvl">Required Level</h1>
+
+		<p class="value" id="val_name"></p>
+		<p class="value" id="val_bp"></p>
+		<p class="value" id="val_sp"></p>
+		<p class="value" id="val_req_lvl"></p>
+	</div>
+	<a id = "closeButton" href ="javascript:window.location.reload();"><img class = "close" src = "images/noun_535441_cc.png"></a>
+</div>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
